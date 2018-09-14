@@ -183,16 +183,6 @@ public abstract class ArbolBinario<T> implements Coleccion<T> {
         return new Vertice(elemento);
     }
 
-    public int profundidad() {
-           return profundidad(raiz);
-       }
-
-       private int profundidad(Vertice vertice) {
-           if (vertice == null)
-               return -1;
-           return 1 + Math.max(profundidad(vertice.izquierdo), profundidad(vertice.derecho));
-       }
-       
     /**
      * Regresa la altura del árbol. La altura de un árbol es la altura de su
      * raíz.
